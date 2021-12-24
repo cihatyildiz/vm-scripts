@@ -8,7 +8,7 @@ import os
 def graphql(query, variables = {}, headers = None):
    graphql_url = os.environ['GraphQL_URL']
    headers = {
-     'accesstoken':  'a769ab58405942d1b57365a1f0f48ea4',
+     'accesstoken':  '<access-token>',
    }
    response = requests.post(
        url = graphql_url,
