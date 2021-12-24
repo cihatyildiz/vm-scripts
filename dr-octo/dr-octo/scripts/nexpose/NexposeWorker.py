@@ -34,7 +34,7 @@ def getAssetIpAddress(assetId):
 
 
 def getNexposeScanStatus(scan_id):
-    url = "https://nexpose:3780/api/3/scans/" + str(scan_id)
+    url = "https://<nexpose-server>/api/3/scans/" + str(scan_id)
 
     headers = {
         'Content-Type': "application/json",
@@ -62,7 +62,7 @@ def getNexposeAssetID(ip_address):
     headers = {
         'Content-Type': "application/json",
         }
-    url = "https://nexpose:3780/api/3/assets/search"
+    url = "https://<nexpose-server>/api/3/assets/search"
     response = requests.post(url, headers=headers , auth=HTTPBasicAuth(nexpose_username, nexpose_password), data=json.dumps(payload), verify=False)
     if response.status_code != 200:
         print(str(response.status_code))
