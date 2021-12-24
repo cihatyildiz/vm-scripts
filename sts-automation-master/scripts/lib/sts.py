@@ -10,7 +10,7 @@ import pdfkit
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def sendReport(subject, payload, sender="crs-fe@delta.org", receiver="crs-fe@delta.org"):
+def sendReport(subject, payload, sender="FROM:", receiver="TO:"):
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
     msg['From'] = sender

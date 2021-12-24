@@ -50,6 +50,6 @@ if __name__ == "__main__":
             kenna_data.append(kenna_result)
         html_report = createHTMLReport(kenna_data, html_template)
         # TODO: generate pdf report as well
-        sendReport("CRVM Tickets Wating for Confirmation", html_report, "crs-fe@delta.org", "crs-fe@delta.org")
+        sendReport("CRVM Tickets Wating for Confirmation", html_report, "from email", "to email")
     else:
         pass

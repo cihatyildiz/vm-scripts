@@ -14,7 +14,7 @@ class KennaXray:
 
     def xray_get_all_watches(self):
 
-        url = "https://jfrogxraylab.deltads.ent/api/v2/watches"
+        url = "https://<jfrogxray-server>/api/v2/watches"
 
         #headers = {'content-type': 'application/json', 'authorizaion': self.authorization }
 
@@ -24,8 +24,7 @@ class KennaXray:
             'User-Agent': "PostmanRuntime/7.15.2",
             'Accept': "*/*",
             'Cache-Control': "no-cache",
-            'Postman-Token': "cf9360ab-7d23-4616-865a-d8561953dfb8,0b7a608d-213b-4b3f-98a6-b199fc31aec2",
-            'Host': "jfrogxraylab.deltads.ent",
+            'Host': "<jfrogxray-server>",
             'Accept-Encoding': "gzip, deflate",
             'Connection': "keep-alive",
             'cache-control': "no-cache"
@@ -45,7 +44,7 @@ class KennaXray:
 
     def xray_get_violations(self, watch_name):
 
-        url = "https://jfrogxraylab.deltads.ent/api/v1/violations"
+        url = "https://<jfrogxray-server>/api/v1/violations"
 
         headers = {
             'Content-Type': "application/json",
@@ -53,7 +52,7 @@ class KennaXray:
             'User-Agent': "PostmanRuntime/7.15.2",
             'Accept': "*/*",
             'Cache-Control': "no-cache",
-            'Host': "jfrogxraylab.deltads.ent",
+            'Host': "<jfrogxray-server>",
             'Accept-Encoding': "gzip, deflate",
             'Connection': "keep-alive"
             }
@@ -88,7 +87,7 @@ class KennaXray:
 
     def xray_create_awatch(self):
 
-        url = " https://jfrogxraylab.deltads.ent/api/v2/watches"
+        url = " https://<jfrogxray-server>/api/v2/watches"
 
         headers = {
             'Content-Type': "application/json",
@@ -96,15 +95,15 @@ class KennaXray:
             'User-Agent': "PostmanRuntime/7.15.2",
             'Accept': "*/*",
             'Cache-Control': "no-cache",
-            'Host': "jfrogxraylab.deltads.ent",
+            'Host': "<jfrogxray-server>",
             'Accept-Encoding': "gzip, deflate",
             'Connection': "keep-alive"
             }
         
         data = {
             "general_data": {
-                "name": "ca34991-feature-01",
-                "description": "watch for user: ca34991, for amt-web feature-01",
+                "name": "feature-01",
+                "description": "watch for user: xxxx, for xxx-web feature-01",
                 "active": True
             },
             "project_resources": {
@@ -116,7 +115,7 @@ class KennaXray:
                         "filters": [
                             {
                                 "type": "path-regex",
-                                "value": "ca34991/feature-01"
+                                "value": "xxxx/feature-01"
                             }
                         ]
                     }
@@ -157,13 +156,13 @@ class KennaXray:
 
         app_names = []
 
-        url = "http://rc-lx2401:5000/app_name_mappings"
+        url = "http://<api-server>/app_name_mappings"
         headers = {'content-type': 'application/json' }
 
         try:
             response = requests.get(url, headers)
         except:
-            exit("Error: octopus_get_mapping_apps")
+            exit("Error: get_mapping_apps")
         
         print(response.text)
         for item in json.loads(response.text):
@@ -179,13 +178,13 @@ class KennaXray:
 
     def octopus_get_last_modified_time_of_the_app(self, app_name):
 
-        url = "http://rc-lx2401:5000/artifactory/app/path_info/{}".format(app_name)
+        url = "http://<api-server>/artifactory/app/path_info/{}".format(app_name)
         headers = {'content-type': 'application/json' }
 
         try:
             response = requests.get(url, headers)
         except:
-            exit("Error: octopus_get_last_modified_time_of_the_app")
+            exit("Error: get_last_modified_time_of_the_app")
         
         if response.status_code != 200:
             exit("POST ../artifactory/app/path_info/ {}".format(response.status_code))
@@ -212,18 +211,9 @@ class KennaXray:
     # ------------------------------------------------------------------------------
 
     def run(self):
-        #TODO Get application mapping file
-        
         self.octopus_get_mapping_apps()
         for app in self.application_map:
             self.octopus_get_last_modified_time_of_the_app(app)
-
-
-        #TODO Get artifactory path of the applicaiton 
-        #TODO Create a watch on Xray based on artifactory path
-        #TODO Sleep (???????????????)
-        #TODO Get all vilations(vulnerabilties) from xray
-        #TODO upload vulnerabiity data to Kenna
         return
 
 if __name__ == "__main__":
@@ -231,7 +221,7 @@ if __name__ == "__main__":
     xray = KennaXray()
     xray.xray_get_all_watches()
     xray.octopus_get_mapping_apps()
-    xray.octopus_get_last_modified_time_of_the_app("amt-web")
+    xray.octopus_get_last_modified_time_of_the_app("xxx-web")
     xray.xray_create_awatch()
 
     

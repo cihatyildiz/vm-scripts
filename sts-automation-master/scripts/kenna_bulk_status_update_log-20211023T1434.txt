@@ -1,6 +1,0 @@
-Checking https://api.kennasecurity.com/assets/search?search_id=297566. Total vulnerabilities = 114
-Starting Thread for https://api.kennasecurity.com/assets/search?search_id=297566 Total vulnerabilities = 114
-Processing = https://api.kennasecurity.com/assets/search?search_id=297566. Total assets = 114
-Checking https://api.kennasecurity.com/assets/search?search_id=297567. Total vulnerabilities = 13
-Starting Thread for https://api.kennasecurity.com/assets/search?search_id=297567 Total vulnerabilities = 13
-Processing = https://api.kennasecurity.com/assets/search?search_id=297567. Total assets = 13

@@ -39,5 +39,5 @@ def createHTMLReport(data, template_filename):
 if __name__ == "__main__":
     kenna_users = getKennaUsers(kenna_api_token)
     html_report = createHTMLReport(kenna_users, html_template)
-    sendReport("Kenna User Reports", html_report, "crs-fe@delta.org", "crs-fe@delta.org")
+    sendReport("Kenna User Reports", html_report, "from: email address", "to: email address")
     #print(html_report)

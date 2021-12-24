@@ -1,20 +1,20 @@
 [
     {
-      "user": "Cihat Yildiz",
-      "user_id": "ca34995",
-      "user_email": "cyildiz@delta.org",
-      "jira_team": "IT-Unix Application",
-      "manager": "Michael Rineman",
-      "manager_id": "ca12345",
-      "manager_email": "mrineman@delta.org"
+      "user": "<>",
+      "user_id": "<>",
+      "user_email": "<>",
+      "jira_team": "<>",
+      "manager": "<>",
+      "manager_id": "<>",
+      "manager_email": "<>"
     },
     {
-      "user": "DharmaTeja Valivarthi",
-      "user_id": "ca34996",
-      "user_email": "cyildiz@delta.org",
-      "jira_team": "IT-Unix Application",
-      "manager": "Saleem Shaikh",
-      "manager_id": "ca12346",
-      "manager_email": "sshaikh@delta.org"
+      "user": "<>",
+      "user_id": "<>",
+      "user_email": "<>",
+      "jira_team": "<>",
+      "manager": "<>",
+      "manager_id": "<>",
+      "manager_email": "<>"
     }
 ]

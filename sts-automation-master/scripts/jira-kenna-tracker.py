@@ -42,11 +42,11 @@ def createHTMLReport(data, template_filename):
 # => Run
 if __name__ == "__main__":
     kenna_data = []
-    jql = "reporter=ENT_SVC_KENNAJIRA AND status != Done AND status != Closed"
+    jql = "reporter=<ServiceUser> AND status != Done AND status != Closed"
     jira_issues = getJiraIssuesByJql(HTTPBasicAuth(jira_username, jira_password), jql) # get jira tickets
     for jira_issue in jira_issues:
         kenna_result = checkJiraTicketInKenna(jira_issue, kenna_api_token)
         kenna_data.append(kenna_result)
     html_report = createHTMLReport(kenna_data, html_template)
     # TODO: generate pdf report as well
-    sendReport("Daily Kenna-Jira Vulnrability Tracker", html_report, "crs-fe@delta.org", "crs-fe@delta.org")
+    sendReport("Kenna-Jira Vulnrability Tracker", html_report, "from email", "to email")

@@ -18,8 +18,5 @@ jira_password = os.environ['JIRA_PASSWORD'].replace('"', "")
 
 if __name__ == "__main__" :
 
-    # jql = "reporter=ENT_SVC_KENNAJIRA AND status != Done AND status != Closed"
-    # jql = "reporter=ENT_SVC_KENNAJIRA AND status != Done AND status != Closed AND project = \"Cyber Risk Vulnerability Management\" AND  duedate < now() "
-    jql = "reporter = ENT_SVC_KENNAJIRA AND status != Done AND status != Closed AND project = \"Cyber Risk Vulnerability Management\" AND duedate < now() AND updatedDate < 2021-09-21"
-    # jql = "(key = CRVM-1082 OR key = CRVM-1083)"
-    jira_issues = getJiraIssuesByJql(HTTPBasicAuth(jira_username, jira_password), jql) # get jira tickets
+    jql = "reporter = <service-user> AND status != Done AND status != Closed AND project = \"Jira Project Name\" AND duedate < now() AND updatedDate < 2021-09-21"
+    jira_issues = getJiraIssuesByJql(HTTPBasicAuth(jira_username, jira_password), jql)

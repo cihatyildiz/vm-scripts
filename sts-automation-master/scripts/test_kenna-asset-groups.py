@@ -35,8 +35,6 @@ if ag_data_pages != ag_data_page:
         for pag in pdata.json()["asset_groups"]:
             kenna_asset_groups.append(pag)
 
-#print(len(kenna_asset_groups))
-
 print("Kenna ID , Asset Group Name , Query String , Created")
 for x in kenna_asset_groups:
     print("{} , {} , {} , {}".format(x["id"], x["name"], unquote(x["querystring"]), x["created_at"]))

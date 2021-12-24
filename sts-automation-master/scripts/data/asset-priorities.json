@@ -5,17 +5,17 @@
     "asset_groups": [
         {
             "name": "Active Directory Servers",
-            "id": 240258,
+            "id": <Asset-Group-ID>,
             "priority": 10
         },
         {
             "name": "All Workstations",
-            "id": 166831,
+            "id": <Asset-Group-ID>,
             "priority": 9
         },
         {
             "name": "Azure Assets",
-            "id": 263986,
+            "id": <Asset-Group-ID>,
             "priority": 8
         }
     ]

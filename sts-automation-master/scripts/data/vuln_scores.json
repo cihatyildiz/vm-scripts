@@ -1,16 +1,16 @@
 {
     "asset_groups": [
         {
-            "id": 299601,
-            "ag_name": "xxx_2018-2628_not_scored",
+            "id": 12334,
+            "ag_name": "sssss",
             "vulns_score": 89,
-            "info": "Oracle WebLogic: CVE-2018-2628 : Critical Patch Update"
+            "info": "tbd"
         },
         {
-            "id": 297641,
-            "ag_name": "xxx_printspooler_vulns_not_updated",
+            "id": 12342,
+            "ag_name": "sssssss",
             "vulns_score": 20,
-            "info": "Printspooler vulnerabilities"
+            "info": "tbd"
         }
     ]
 }
