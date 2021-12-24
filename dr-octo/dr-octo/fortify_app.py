@@ -11,7 +11,7 @@ api = Api(app)
 @api.route('/hello')
 class HelloWorld(Resource):
   def get(self):
-    return 'foritfy-app from crs-dr-octopus'
+    return 'foritfy-app from dr-octopus'
 
 
 if __name__ == '__main__':
