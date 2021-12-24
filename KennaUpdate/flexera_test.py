@@ -1,6 +1,6 @@
 import pymssql
 
-PASS = "!@#Iseeeverything"
+PASS = "<password>"
 
 conn = pymssql.connect(
     server="<db-server>",
