@@ -4,7 +4,7 @@ import sys, os, requests, json, time
 from requests.auth import HTTPBasicAuth
 from datetime import datetime
 
-sys.path.insert(1, '/crs/dr-octopus/dr-octopus/')
+sys.path.insert(1, '/.../dr-octopus/dr-octopus/')
 
 from libs.eagle_eye.vulns import EagleEyeVulns
 from libs.eagle_eye.apps import EagleEyeApps
@@ -16,7 +16,7 @@ requests.packages.urllib3.disable_warnings()
 nexpose_username = os.environ['NEXPOSE_USERNAME'].replace('"', "")
 nexpose_password = os.environ['NEXPOSE_PASSWORD'].replace('"', "")
 
-nexpose_asset_group_id = 332
+nexpose_asset_group_id = 123
 nexpose_db_scan_type = "nexpose"
 
 
@@ -114,7 +114,7 @@ def getFormattedVuln(vuln, ip_address, assetId):
 
 def getVulnDetails(vuln_id):
     try: 
-        url = "https://nexpose:3780/api/3/vulnerabilities/" + str(vuln_id)
+        url = "https://<nexpose-server>/api/3/vulnerabilities/" + str(vuln_id)
         headers = {
             'Content-Type': "application/json",
             }
@@ -130,7 +130,7 @@ def getVulnDetails(vuln_id):
 
 
 def getNexposeVulns(asset_id):
-    url = "https://nexpose:3780/api/3/assets/" + str(asset_id) + "/vulnerabilities?page=0&size=500"
+    url = "https://<nexpose-server>/api/3/assets/" + str(asset_id) + "/vulnerabilities?page=0&size=500"
     headers = {
         'Content-Type': "application/json",
         }
@@ -185,7 +185,7 @@ def addIpToNexposeSite(ip_address):
     headers = {
         'Content-Type': "application/json"
         }
-    url = "https://nexpose:3780/api/3/sites/" + str(nexpose_asset_group_id) + "/included_targets"
+    url = "https://<nexpose-server>/api/3/sites/" + str(nexpose_asset_group_id) + "/included_targets"
     response = requests.put(url, headers=headers , auth=HTTPBasicAuth(nexpose_username, nexpose_password), data=json.dumps(payload), verify=False)
     if response.status_code != 200:
         print("ASSET NOT EXIST!!")
@@ -218,7 +218,7 @@ def startNexposeScan(assets):
     headers = {
         'Content-Type': "application/json"
         }
-    url = "https://nexpose:3780/api/3/sites/" + str(nexpose_asset_group_id) + "/scans"
+    url = "https://<nexpose-server>/api/3/sites/" + str(nexpose_asset_group_id) + "/scans"
     response = requests.post(url, headers=headers , auth=HTTPBasicAuth(nexpose_username, nexpose_password), verify=False)
     if response.status_code != 201:
         print(response.status_code)
