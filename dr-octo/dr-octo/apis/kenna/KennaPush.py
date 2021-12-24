@@ -18,7 +18,7 @@ def pushToKenna():
                 'https://api.kennasecurity.com/vulnerabilities',
                 headers = {
                     'content-type': "application/json",
-                    'x-risk-token': "1xHaoTyFBU6P7DjGvN1Mtrd3hWdg2DGSxYszvHooPWQautPC6r8GgT2asD6FCsNG"
+                    'x-risk-token': "<api-token>"
                 },
                 data = json.dumps({
                     "vulnerability": vuln
