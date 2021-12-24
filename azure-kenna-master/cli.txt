@@ -1,0 +1,9 @@
+az login
+az | grep security
+az security --help
+az login --help
+read -sp "Azure password: " AZ_PASS && echo && az login -u ca34995 -p $AZ_PASS
+read -sp "Azure password: " AZ_PASS && echo && az login -u cyildiz@delta.org -p $AZ_PASS
+az graph query -q "securityresources | where type == 'microsoft.security/assessments' | where * contains 'vulnerabilities'"
+read -sp "Azure password: " AZ_PASS && echo && az login -u cyildiz@delta.org -p $AZ_PASS
+az graph query -q "securityresources | where type == 'microsoft.security/assessments' | where * contains 'vulnerabilities'" > az_vulns.json

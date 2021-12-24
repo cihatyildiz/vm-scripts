@@ -1,0 +1,10 @@
+{
+    "assets" : [
+        {
+            "riskmeter": 302118,
+            "description": "desktop devices which have #Network tag",
+            "operation": "tag-remove",
+            "tags": ["#Network"]
+        }
+    ]
+}

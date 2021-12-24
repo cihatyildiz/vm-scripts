@@ -1,0 +1,22 @@
+{
+    "settings": {
+        "desctiption": "this file lists all the risk meters that we need to update priorities"
+    },
+    "asset_groups": [
+        {
+            "name": "Active Directory Servers",
+            "id": 240258,
+            "priority": 10
+        },
+        {
+            "name": "All Workstations",
+            "id": 166831,
+            "priority": 9
+        },
+        {
+            "name": "Azure Assets",
+            "id": 263986,
+            "priority": 8
+        }
+    ]
+}

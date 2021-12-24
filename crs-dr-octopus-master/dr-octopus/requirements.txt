@@ -1,0 +1,6 @@
+flask
+flask_restplus
+requests
+Flask-API
+pyopenssl
+python-crontab

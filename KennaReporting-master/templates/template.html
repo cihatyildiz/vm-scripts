@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title>
+		<style type="text/css">
+			#outlook a {padding:0;}
+			body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} /* force default font sizes */
+			.ExternalClass {width:100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Hotmail */
+			table td {border-collapse: collapse;}
+			@media only screen and (min-width: 800px) { .maxW { width:800px !important; } }
+		</style>
+	</head>
+	<body style="margin: 0px; padding: 0px; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td valign="top">
+			<tr><td>
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+						<tr>
+							<td align="left" valign="middle" style="font-family: sans-serif; font-size: 24px; color: #353535; padding:3%; padding-top:40px; padding-bottom:40px;">
+							<strong>{{ ag_title }}</strong>
+							</td>
+							<td align="right" valign="middle" style="font-family: sans-serif; font-size: 24px; color: #353535; padding:3%; padding-top:40px; padding-bottom:40px;">
+							<img src="cid:0" alt="img" />
+							</td>
+						</tr>
+						</table>
+						<tr>
+							<td align="center"> <!-- report starts here -->
+								<table width="94%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+										  <td width="70%" align="left" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-right:0;">
+											Asset Group Information
+										  </td>
+										  <td width="30%" align="right" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-left:0;">
+											&nbsp;
+										  </td>
+										</tr>
+										<tr>
+											<td width="70%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												Risk Score
+											</td>
+											<td width="30%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												{{ ag_risk_meter_score }}
+											</td>
+										</tr>
+										<tr>
+										  <td width="70%" align="left" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+											Asset Count
+										  </td>
+										  <td width="30%" align="right" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+											{{ ag_asset_count }}
+										  </td>
+										</tr>
+										<tr>
+										  <td width="70%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+											Vulnerability Count
+										  </td>
+										  <td width="30%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+											{{ ag_vulnerability_count }}
+										  </td>
+										</tr>
+										<tr>
+										  <td width="70%" align="left" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+											Total Fixes
+										  </td>
+										  <td width="30%" align="right" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+											{{ ag_fix_count }}
+										  </td>
+										</tr>
+										<tr>
+											<td width="70%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+											Vulnerability Density (Avarage vulnerabilities per asset) 
+											</td>
+											<td width="30%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+											 {{ ag_vulnerability_density }}
+											</td>
+										</tr>
+										<tr>
+											<td width="70%" align="left" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												Popular Targets
+											</td>
+											<td width="30%" align="right" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												{{ ag_popular_targets_count }}
+											</td>
+											</tr>
+											<tr>
+												<td width="70%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												Malware Exploitable vulnerabilities
+												</td>
+												<td width="30%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												{{ ag_malware_exploitable_count }}
+												</td>
+											</tr>
+											<tr>
+													<td width="70%" align="left" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+														Predicted Exploitable Vulnerabilities 
+													</td>
+													<td width="30%" align="right" bgcolor="#FFFFFF" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+														{{ ag_predicted_exploitable_count }}
+													</td>
+											</tr>
+											<tr><br></tr>																																
+									  </table>
+									  <table width="94%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+										  <td width="70%" align="left" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-right:0;">
+											Top Vulnerabilities/Fixes
+										  </td>
+										  <td width="30%" align="right" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-left:0;">
+											
+										  </td>
+										</tr>
+
+										{% for top_fix in ag_top_fixes %}
+										<tr>
+											<td width="70%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												{{ top_fix }}
+											</td>
+											<td width="30%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+											</td>
+										</tr>
+										{% endfor %}		
+										<tr><br></tr>								
+									  </table>
+									  <table width="94%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+										  <td width="50%" align="left" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-right:0;">
+											Top Vulnerabile Assets (hostname / ip address / assets score)
+										  </td>
+										  <td width="500%" align="right" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-left:0;">
+											&nbsp;
+										  </td>
+										</tr>
+
+										{% for vuln_asset in ag_top_vuln_assets %}
+										<tr>
+											<td width="%50" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												{{ vuln_asset[0] }}
+											</td>
+											<td width="50%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												( IP Address: {{ vuln_asset[1] }}, Asset Score: {{ vuln_asset[2] }} )
+											</td>
+
+										</tr>
+										{% endfor %}
+										
+										<tr><br></tr>
+										
+									  </table>
+
+									  <table width="94%" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+										  <td width="90%" align="left" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-right:0;">
+											Kenna URLs
+										  </td>
+										  <td width="30%" align="right" bgcolor="#41A928" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #F2F2F2; padding:10px; padding-left:0;">
+											&nbsp;
+										  </td>
+										</tr>
+
+										<tr>
+											<td width="%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												<a href="{{ report_page }}">Report page</a>
+											</td>
+											<td width="25%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												&nbsp;
+											</td>
+
+										</tr>
+										<tr>
+											<td width="%" align="left" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-right:0;">
+												<a href="{{ top_fix_page }}">Top Fixes</a>
+											</td>
+											<td width="25%" align="right" bgcolor="#F2F2F2" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 12px; color: #252525; padding:10px; padding-left:0;">
+												&nbsp;
+											</td>
+
+										</tr>
+										
+										<tr><br></tr>
+										
+									  </table>
+										    
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="middle" style="font-family: Verdana, Geneva, Helvetica, Arial, sans-serif; font-size: 14px; color: #353535; padding:3%; padding-top:40px; padding-bottom:40px;">
+									<strong>Note:</strong> This report is auto generated. Information in this report is derived from the Kenna Security Platform. To view more details related the asset group presented here, please visit the <a href="https://delta.kennasecurity.com">Kenna security Platform</a>. If you have any questions or concerns related to vulnerabilities or assets please email to Cyber Risk Management - <a href="mailto:crm-fe@delta.org">Security Task-Force</a>&nbsp;<!-- using &nbsp; will prevent orphan words -->
+							</td>
+						</tr>
+					</table>
+			</td></tr>
+		</table>
+	</body>
+</html>

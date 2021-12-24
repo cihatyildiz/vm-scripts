@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "desctiption": "this is a config file sends email based on search query in jira"
+    },
+    "emails": [
+        {
+            "subject": "CRVM Tickets Assigned to Cihat Yildiz",
+            "recepient_email": "cyildiz@delta.org",
+            "recepient_name": "Cihat",
+            "recepient_lastname": "Yildiz",
+            "cc": [
+                "crs-fe@delta.org"
+            ],
+            "jql": "project = \"Cyber Risk Vulnerability Management\" AND assignee = ca34995 AND status != Done"
+        }
+    ]
+}

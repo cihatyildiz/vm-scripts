@@ -1,0 +1,57 @@
+<h1 style="color: #5e9ca0;">
+    <span style="color: #99cc00;">STS Daily - Tickets Waiting for Confirmation</span>
+</h1>
+<p>This is a generated report that checks the the ticket which is the status is "waiting for confirmaiton". We can see how many vulnerable assets remaining in Kenna Platform.&nbsp;</p>
+<table class="editorDemoTable" style="width: 401px; height: 31px;" border="1" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr style="height: 18px;">
+            <td style="width: 287px; height: 18px;"><span style="color: #339966;">Tickets don't have vulnerable assets</span></td>
+            <td style="width: 108px; height: 18px;">{{ novulncount }}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="height: 54px;">
+            <td style="width: 287px; height: 13px;"><span style="color: #993300;">Tickets stiil have vulnerable assets</span></td>
+            <td style="width: 108px; height: 13px;">{{ vulncount }}</td>
+        </tr>
+    </tbody>
+</table>
+<h2 style="color: #2e6c80;"><span style="color: #99cc00;">Results:</span></h2>
+<table class="editorDemoTable" style="width: 830px;" border="1" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <td style="width: 200px;">Ticket</td>
+            <td style="width: 600px;">Title</td>
+            <td style="width: 200px;">Priority</td>
+            <td style="width: 85px;">Asset count</td>
+            <td style="width: 70px;">Status</td>
+            <td style="width: 200px;">Assignee</td>
+            <td style="width: 200px;">Due date</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for issue in issues %}
+        {% if issue.asset_count == 0 %}
+        <tr style="height: 54px;">
+            <td style="width: 200px; height: 54px;"><span style="background-color: #ffff00;"><a style="background-color: #ffff00;" href="https://atlassian/jira/browse/{{ issue.ticket }}">{{ issue.ticket }}</a></span></td>
+            <td style="width: 600px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.summary }}</strong></span></td>
+            <td style="width: 200px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.priority }}</strong></span></td>
+            <td style="width: 126px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.asset_count }}</strong></span></td>
+            <td style="width: 84px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.status }}</strong></span></td>
+            <td style="width: 200px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.assignee }}</strong></span></td>
+            <td style="width: 200px; height: 54px;"><span style="background-color: #ffff00;"><strong>{{ issue.duedate }}</strong></span></td>
+        </tr>
+        {% else %}
+        <tr>
+            <td style="width: 200px;"><a href="https://atlassian/jira/browse/{{ issue.ticket }}">{{ issue.ticket }}</a></td>
+            <td style="width: 600px;">{{ issue.summary }}</td>
+            <td style="width: 200px;">{{ issue.priority }}</td>
+            <td style="width: 85px;">{{ issue.asset_count }}</td>
+            <td style="width: 70px;">{{ issue.status }}</td>
+            <td style="width: 200px;">{{ issue.assignee }}</td>
+            <td style="width: 200px;">{{ issue.duedate }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,464 @@
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "7b0e039e-08e7-47c9-b447-59ebd174faf1",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "providermanagement-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "7b7fec58-5fdc-4e6c-bb82-503e7fc8bde2",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "corporaterealestate-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "e0d8f0ae-b15d-477d-b910-e45c229256b1",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "marketing-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "5ccdfadc-8150-49e5-aa8a-a25f2f8c3160",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "products-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "105fd517-7fbe-4a42-b4e1-3ac44052cfba",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "hub-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "bbca02bf-cae1-4946-9730-98c1a39ba56f",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "legalcomplianceriskmanagement-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "00a01920-4740-4f93-9dbc-0bf18e333656",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "corporate-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "f82549ba-6ba1-4bdd-8d73-5febd84ba651",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "sales-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "f61dd154-d7d3-4f83-b7f0-b1990c2c9639",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "informationtechnology-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "8a6230b0-f983-4f3a-a4c1-5102a61f4c56",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "hub-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "cae8893b-e35a-4c21-aada-32869f0102a3",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "customerservice-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "0db332ac-ff59-414c-8c2f-669db14ae83d",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "corporate-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "0dfe6bc5-1982-4b68-a059-a11e5834a4a8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "humancapital-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "23cb8324-dcbb-4575-ad73-0a0937492667",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "groupmembermanagement-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "246cfaca-31c4-4741-8a76-0344235fa4b8",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "dentalcaremanagement-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "9e5d6daf-dab1-491c-9d2d-1cc2872d7e2c",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "legalcomplianceriskmanagement-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "602c8ea3-e28d-4265-a9a5-b2a5a773cda0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "informationtechnology-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "a20c117d-ae50-4de1-982c-4136c9b5918d",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "legacy-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "bb4dc6c1-c403-43fe-8a05-842cc6747479",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "products-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "32efb71e-1e5f-498e-9376-3ba0830caee6",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "claimsprocessing-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "fbc79113-2a8c-4aab-8a04-db2a1ee7d404",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "sales-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "305ca2aa-db63-4c44-8260-0827aba0cca0",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "claimsprocessing-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "5b396770-ef95-443e-ae54-06eabd6ee2fc",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "groupmembermanagement-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "3113c622-6251-43ba-9b28-3b84cd7d29a2",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "dentalcaremanagement-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "5ac04a55-91ef-4424-9615-b1c1aaa67382",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "customerservice-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "c2c1e53f-461d-4754-bd98-562e6f2c0e3a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "humancapital-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "5b386a62-7fe1-44cd-9a30-8f8d918fd7c5",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "marketing-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "af12a0ac-ca7d-4fa6-a9fc-c846fa323777",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "corporaterealestate-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "2cf2f1ee-3eb5-43a4-bc80-f99712e83048",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "providermanagement-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "02b94dfa-0d93-4a51-b445-d56e54bff17a",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "financialmanagement-prod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "0c2050d7-5cfa-4d1c-a7b9-8a065eb2e0e4",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "sandbox",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "4c04cd86-e625-4100-8bbf-26e79dbf73ee",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "financialmanagement-nonprod",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "id": "4dcac38f-b421-4d84-b3d8-91377b133334",
+    "isDefault": false,
+    "managedByTenants": [],
+    "name": "dd-crm-subscription",
+    "state": "Enabled",
+    "tenantId": "fa8362b9-ef27-44e1-bf1c-b6e97717881d",
+    "user": {
+      "name": "CYildiz@delta.org",
+      "type": "user"
+    }
+  }
+]

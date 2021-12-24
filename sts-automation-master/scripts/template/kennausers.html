@@ -1,0 +1,27 @@
+<h1 style="color: #5e9ca0;">
+    <span style="color: #99cc00;">Kenna User Report</span>
+</h1>
+<p>This is a generated report that checks the user informaton from kenna platform. &nbsp;</p>
+<h2 style="color: #2e6c80;"><span style="color: #99cc00;">Users</span></h2>
+<table class="editorDemoTable" style="width: 80%;" border="1" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <td style="width: 200px;">User</td>
+            <td style="width: 200px;">Email</td>
+            <td style="width: 70px;">Last-login</td>
+            <td style="width: 200px;">Role(s)</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.firstname}} {{user.lastname }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.last_sign_in_at }}</td>
+                <td>
+                    {% for role in user.roles %}{{ role }} {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

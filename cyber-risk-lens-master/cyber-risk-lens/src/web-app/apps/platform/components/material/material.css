@@ -1,0 +1,152 @@
+/* CRM Colors */
+
+:root {
+  --crm-color-white: #ffffff;
+  --crm-color-primary-dark: #314BA6;
+  --crm-color-primary-medium: #8b9dc3;
+  --crm-color-primary-light: #dfe3ee;
+  --crm-color-primary-lighter: #f7f7f7;
+  --crm-font-color-grey-dark: #4b4c4c;
+  --crm-font-color-grey-light: #5c5d5e;
+  --crm-border-color-grey: #DCDBDC;
+}
+
+/* Small Padding - 5px */
+.pls {
+  padding-left: 5px;
+}
+
+.prs {
+  padding-right: 5px;
+}
+
+.pts {
+  padding-top: 5px;
+}
+
+.pbs {
+  padding-bottom: 5px;
+}
+
+.phs {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pvs {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pas {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Medium Padding- 10px */
+.plm {
+  padding-left: 10px;
+}
+
+.prm {
+  padding-right: 10px;
+}
+
+.ptm {
+  padding-top: 10px;
+}
+
+.pbm {
+  padding-bottom: 10px;
+}
+
+.phm {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pvm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pam {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Large Padding- 20px */
+.pll {
+  padding-left: 20px;
+}
+
+.prl {
+  padding-right: 20px;
+}
+
+.ptl {
+  padding-top: 20px;
+}
+
+.pbl {
+  padding-bottom: 20px;
+}
+
+.phl {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pvl {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pal {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Medium Margin - 10px */
+.mlm {
+  margin-left: 10px;
+}
+
+.mrm {
+  margin-right: 10px;
+}
+
+.mtm {
+  margin-top: 10px;
+}
+
+.mbm {
+  margin-bottom: 10px;
+}
+
+.mhm {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mvm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mam {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.align-right {
+  text-align: right;
+}
