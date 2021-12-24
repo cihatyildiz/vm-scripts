@@ -3,7 +3,7 @@ from requests.auth import HTTPBasicAuth
 
 def getUploadToken():
   print ('getUploadToken')
-  url = 'http://rc-lx2589:8080/ssc/api/v1/fileTokens'
+  url = 'http://<fortify-server>/ssc/api/v1/fileTokens'
   headers = {
     'accept': 'application/json',
     'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ def getUploadToken():
 
 def uploadFprToSSC(app_name, project_id, fpr_path, upload_token):
   print('in upload fpr to ssc')
-  curl_cmd = 'curl -X "POST" "http://rc-lx2589:8080/ssc/upload/resultFileUpload.html?mat={}" -F "entityId={}" -F "file=@{}"'.format(upload_token, project_id, fpr_path)
+  curl_cmd = 'curl -X "POST" "http://<fortify-server>/ssc/upload/resultFileUpload.html?mat={}" -F "entityId={}" -F "file=@{}"'.format(upload_token, project_id, fpr_path)
   os.system(curl_cmd)
 
 
