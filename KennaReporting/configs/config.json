@@ -1,43 +1,41 @@
 {
     "settings" : {
         "debug_mode" : true,
-        "kenna_api_key" : "y7AWykA6hSkcaLKvZcRRXe4Heyyss-Nb2vawq_Xnn_TNd5Dq4iDzhNgw7voAy55H"
+        "kenna_api_key" : "<api-token>"
     },
     "reports" : 
     {
         "all_assets" : {
-            "report_title"     : "SRT Report - All Assets",
-            "kenna_risk_meter_id" : "138873",
+            "report_title"     : "Report - All Assets",
+            "kenna_risk_meter_id" : "1234",
             "top_vuln_assets" : "min_risk_meter_score=900",
             "kenna_search" : "",
             "recepients" : 
             [
-                "cyildiz@delta.org",
-                "GLakshmanan@delta.org"
+                "xxx@yyy.org",
+                "xyy@yyy.org"
             ]
         },
         "windows_server" : {
-            "report_title"     : "SRT Report - Windows Servers",
-            "kenna_risk_meter_id" : "161230",
+            "report_title"     : "Report - Windows Servers",
+            "kenna_risk_meter_id" : "2345",
             "top_vuln_assets" : "tags[]=%23Windows%20Server&min_risk_meter_score=900",
             "kenna_search" : "",
             "recepients" : 
             [
-                "cyildiz@delta.org", 
-                "GLakshmanan@delta.org",
-                "mrineman@delta.org"
+                "xxx@yyy.org",
+                "xyy@yyy.org"
             ]
         },
         "unix" : {
-            "report_title" : "SRT Report - Unix Systems",
-            "kenna_risk_meter_id" : "161164",
+            "report_title" : "Report - Unix Systems",
+            "kenna_risk_meter_id" : "34556",
             "top_vuln_assets" : "tags[]=%23Unix&min_risk_meter_score=900",
             "kenna_search" : "",
             "recepients" : 
             [
-                "cyildiz@delta.org",
-                "GLakshmanan@delta.org",
-                "mrineman@delta.org"
+                "xxx@yyy.org",
+                "xyy@yyy.org"
             ]
         }
     }

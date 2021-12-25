@@ -133,8 +133,8 @@ html_data = template.render(
     ag_predicted_exploitable_count=kenna_ag_information['asset_group']['predicted_exploitable_count'],
     ag_top_fixes=kenna_ag_topfixes,
     ag_top_vuln_assets = kenna_top_vulnerable_assets,
-    report_page="https://delta.kennasecurity.com/dashboard/risk_meter/" + ag_config['kenna_risk_meter_id'],
-    top_fix_page="https://delta.kennasecurity.com/dashboard/risk_meter/" + ag_config['kenna_risk_meter_id'] + "/fixes"
+    report_page="https://xxxxx.kennasecurity.com/dashboard/risk_meter/" + ag_config['kenna_risk_meter_id'],
+    top_fix_page="https://xxxxx.kennasecurity.com/dashboard/risk_meter/" + ag_config['kenna_risk_meter_id'] + "/fixes"
     )
 
 with open("outputs/report.html", "w") as f:
@@ -149,7 +149,7 @@ with open("outputs/report.html", "w") as f:
 # prepare the header
 msg = MIMEMultipart('alternative')
 msg['Subject'] = "STR Asset Group Report"
-msg['From'] = "crs-fe@delta.org"
+msg['From'] = "crs-fe@xxxxx.org"
 msg['To'] = ",".join(item for item in ag_config['recepients'])
 
 html_msg = MIMEText(html_data, 'html')
@@ -158,7 +158,7 @@ msg.attach(html_msg)
 #load image file
 with open('outputs/ddlogo1.png', 'rb') as f:
     # set attachment mime and file name, the image type is png
-    mime = MIMEBase('image', 'png', filename='ddlogo1.png')
+    mime = MIMEBase('image', 'png', filename='logo.png')
     # add required header data:
     mime.add_header('Content-Disposition', 'attachment', filename='ddlogo1.png')
     mime.add_header('X-Attachment-Id', '0')
@@ -175,6 +175,6 @@ rcpts = ag_config['recepients']
 # Send image 
 s = smtplib.SMTP('localhost')
 for rcpt in rcpts:
-    s.sendmail("crs-fe@delta.org", rcpt , msg.as_string())
+    s.sendmail("from@xxxxx.org", rcpt , msg.as_string())
     print("Sending email to " + rcpt)
 s.quit()

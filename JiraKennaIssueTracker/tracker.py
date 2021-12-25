@@ -63,7 +63,7 @@ if __name__ == '__main__':
     except Exception as e:
         html_report = "Please check jira tickets have proper information - Error which getting informattion from Jira {}".format(e)
     finally:
-        sendReport(html_report, "crs-fe@delta.org", "crs-fe@delta.org")
+        sendReport(html_report, "FROM:", "TO:")
 
         
         
