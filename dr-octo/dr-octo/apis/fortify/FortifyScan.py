@@ -305,7 +305,7 @@ def scan(appId):
         versionTime = int(strftime("%Y%d%H%M", gmtime()))
         projectId = createProjectVersion((name+'-'+ currentTime),versionTime,eeAppConfig)
         print('projectID: {}'.format(projectId))
-        print('STEP 2: Run scan on SCA server -> rc-lx2589')
+        print('STEP 2: Run scan on SCA server -> rerver")
         runScanOnSCA(appId, projectId)
         print('STEP 4: Sleep for 10s')
         time.sleep(10)

@@ -12,9 +12,9 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 from requests.auth import HTTPBasicAuth
 # SSC Settings
-ssc_host = "rc-lx2589:8080"  # SSC hostname:port
+ssc_host = "server:8080"  # SSC hostname:port
 ssc_cntx = "/ssc"  # SSC root context
-#ssc_user="ca35532"
+#ssc_user="<user-id>"
 #ssc_pass=""
 ssc_user = os.environ['SSC_USERNAME'].replace('"', "")  # SSC username
 ssc_pass = os.environ['SSC_PASSWORD'].replace('"', "") # SSC password
@@ -299,9 +299,8 @@ def run_fortify_scan(app_name):
 #Push the Issue details in Kenna
 def push_to_kenna(cwe_id,recommendation,issueName,fullFileName):
     #data ="'cve_id':'"+cwe_id+"','primary_locator':'"+fullFileName+"','hostname':'"+issueName+"','notes':'"+recommendation+"'"
-    url = "https://ddcadev.kennasecurity.com/vulnerabilities"
-    payload = "{\n\t\"vulnerability\": {\n\t\t\"wasc_id\": \"WASC-42\",\n\t\t\"primary_locator\": \"hostname\",\n\t\t\"url\": \"http://rc-lx2589:8080/ssc/api/v1/issueDetails/4102\"\n\t}\n}"
-   # payload = "{\n\t\"vulnerability\": {\n\t\t\"wasc_id\": \"WASC-42\",\n\t\t\"primary_locator\": \""+fullFileName+"\",\n\t\t\"notes\": \""+recommendation+"\",\n\t\t\"hostname\": \""+issueName+"\n\t}\n"
+    url = "https://xxxx.kennasecurity.com/vulnerabilities"
+    payload = "{\n\t\"vulnerability\": {\n\t\t\"wasc_id\": \"WASC-42\",\n\t\t\"primary_locator\": \"hostname\",\n\t\t\"url\": \"http://server:8080/ssc/api/v1/issueDetails/4102\"\n\t}\n}"
     print(payload)
     headers = {
     'content-type': "application/json",
@@ -338,7 +337,7 @@ print("New project version ID: " + str(pvid))
 #authtoken="NWQ5YmVkMTAtYjhlMC00NTk1LWFmMjUtMjIyOTUzYzhiNDJh"
 authtoken="f2c34249-0816-4815-8b00-ccb43e4a5e93"
 path="/opt/Fortify/source_code"
-#cmd_uploadfpr=("/opt/Fortify/Fortify_SCA_and_Apps_19.1.0/bin/fortifyclient -url http://rc-lx2589:8080/ssc -authtoken " +str(authtoken)+ " uploadFPR -file " + str(path) +"/"+ str(app_name)+".fpr -applicationVersionID "+str(pvid))
+#cmd_uploadfpr=("/opt/Fortify/Fortify_SCA_and_Apps_19.1.0/bin/fortifyclient -url http://server:8080/ssc -authtoken " +str(authtoken)+ " uploadFPR -file " + str(path) +"/"+ str(app_name)+".fpr -applicationVersionID "+str(pvid))
 cmd_uploadfpr="fortifyclient -url "+sscurl+" -authtoken "+str(authtoken)+" uploadFPR -file "+str(path) + "/"+str(app_name)+".fpr -applicationVersionID "+str(pvid)
 print(cmd_uploadfpr)
 cmd_uploadfpr=str(cmd_uploadfpr)
