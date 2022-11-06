@@ -1,4 +1,4 @@
-# crs-dr-octopus
+# dr-octopus
 
 
 ## DEV Setup:
